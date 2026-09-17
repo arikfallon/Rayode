@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #080808;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.fundomeio {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        radial-gradient(circle at center, #292300 0%, #080808 60%);
+}
+
+.meio {
+    width: 80%;
+    max-width: 750px;
+
+    padding: 80px 50px;
+
+    text-align: center;
+
+    background: linear-gradient(145deg,
+            #f5e34f,
+            #d9bd20);
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 0 30px rgba(238, 220, 59, 0.4),
+        0 0 80px rgba(238, 220, 59, 0.15);
+
+    color: #171400;
+
+    animation: aparecer 1.5s ease;
+}
+
+.coracao {
+    font-size: 55px;
+    color: #8007a5;
+
+    animation: pulsar 1.5s infinite;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+
+.Ray {
+    font-weight: bold;
+
+    background: linear-gradient(110deg,
+            #e6b820 0%,
+            #ffd700 25%,
+            #fff4a3 45%,
+            #ffffff 50%,
+            #ffd700 75%,
+            #e6b820 100%);
+
+    background-size: 250% 100%;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+    animation: ouro 3s ease-in-out infinite;
+}
+
+@keyframes ouro {
+
+    0% {
+        background-position: 100% 50%;
+    }
+
+    50% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+
+}
+
+
+
+.mensagem {
+    font-size: 24px;
+    line-height: 1.6;
+
+    margin-top: 30px;
+}
+
+.frase1,
+.frase2 {
+    font-size: 18px;
+    margin-top: 30px;
+
+    font-style: italic;
+}
+
+.linha {
+    width: 60%;
+    height: 2px;
+
+    margin: 35px auto;
+
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+    margin-top: 50px;
+}
+
+.foto {
+    width: 170px;
+
+    padding: 10px 10px 18px;
+
+    background-color: #fff;
+
+    border-radius: 5px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.4);
+
+    transition: 
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.foto img {
+    width: 150px;
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 3px;
+
+    display: block;
+}
+
+.foto p {
+    margin: 12px 0 0;
+
+    text-align: center;
+
+    font-family: cursive;
+    font-size: 15px;
+
+    color: #333;
+}
+
+.final {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+
+/* Animação de entrada */
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* Coração pulsando */
+
+@keyframes pulsar {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
