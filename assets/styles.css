@@ -124,7 +124,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 50px;
 
     flex-wrap: wrap;
 
@@ -132,7 +132,7 @@ h1 {
 }
 
 .foto {
-    width: 170px;
+    width: 220px;
 
     padding: 10px 10px 18px;
 
@@ -149,8 +149,8 @@ h1 {
 }
 
 .foto img {
-    width: 150px;
-    height: 200px;
+    width: 200px;
+    height: 250px;
 
     object-fit: cover;
 
